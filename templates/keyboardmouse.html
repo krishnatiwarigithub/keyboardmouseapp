@@ -1,0 +1,512 @@
+
+<div>
+
+</div>
+
+<div class="waitermodekeypadwrapper">
+
+    <div class="waitermodekeypad per100width" ng-if="keyboard.show && keyboard.mode==1">
+
+        <div class="row" style="padding-bottom:0px;">
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton" ng-click="actions.mouseLeftClick()">Left Click</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton" ng-click="actions.mouseRightClick()">Right Click</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col   buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced"  ng-click="actions.switchToAbc()">ABC</button>
+            </div>
+            <!--<div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" ng-click="actions.switchToSym()">SYM</button>
+            </div>-->
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" ng-click="actions.hide()">Hide</button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-left-c"  on-release="actions.buttonUp('left')" ng-click="actions.buttonClick('left')" on-hold="actions.buttonHold('left')"></button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-up-c"  on-release="actions.buttonUp('up')" ng-click="actions.buttonClick('up')" on-hold="actions.buttonHold('up')"></button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-down-c"  on-release="actions.buttonUp('down')" ng-click="actions.buttonClick('down')" on-hold="actions.buttonHold('down')"></button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-right-c"  on-release="actions.buttonUp('right')" ng-click="actions.buttonClick('right')" on-hold="actions.buttonHold('right')"></button>
+            </div>
+        </div>
+
+        <div style="max-width: 300px; width:100%; display:inline-block;">
+            <div class="row" style="padding-top:0px;">
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('7')" ng-click="actions.buttonClick('7')" on-hold="actions.buttonHold('7')">7</button>
+                </div>
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('8')" ng-click="actions.buttonClick('8')" on-hold="actions.buttonHold('8')">8</button>
+                </div>
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('9')" ng-click="actions.buttonClick('9')" on-hold="actions.buttonHold('9')">9</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('4')" ng-click="actions.buttonClick('4')" on-hold="actions.buttonHold('4')">4</button>
+                </div>
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('5')" ng-click="actions.buttonClick('5')" on-hold="actions.buttonHold('5')">5</button>
+                </div>
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('6')" ng-click="actions.buttonClick('6')" on-hold="actions.buttonHold('6')">6</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('1')" ng-click="actions.buttonClick('1')" on-hold="actions.buttonHold('1')">1</button>
+                </div>
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('2')" ng-click="actions.buttonClick('2')" on-hold="actions.buttonHold('2')">2</button>
+                </div>
+                <div class="col buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('3')" ng-click="actions.buttonClick('3')" on-hold="actions.buttonHold('3')">3</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col   buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('0')" ng-click="actions.buttonClick('0')" on-hold="actions.buttonHold('0')">0</button>
+                </div>
+                <div class="col  buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-balanced"  on-release="actions.buttonUp('.')" ng-click="actions.buttonClick('.')" on-hold="actions.buttonHold('.')">.</button>
+                </div>
+                <div class="col  buttonwrapcol">
+                    <button class="button button-block keypadbuttons button-assertive ion-close-circled"  on-release="actions.buttonUp('backspace')" ng-click="actions.buttonClick('backspace')" on-hold="actions.buttonHold('backspace')"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" style="padding-bottom:0px;">
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton"  on-release="actions.buttonUp('ctrl')" ng-click="actions.buttonClick('ctrl')" on-hold="actions.buttonHold('ctrl')">Ctrl</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('shift')" ng-click="actions.buttonClick('shift')" on-hold="actions.buttonHold('shift')">Shift</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('alt')" ng-click="actions.buttonClick('alt')" on-hold="actions.buttonHold('alt')">Alt</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton"  on-release="actions.buttonUp(' ')" ng-click="actions.buttonClick(' ')" on-hold="actions.buttonHold(' ')">___</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('enter')" ng-click="actions.buttonClick('enter')" on-hold="actions.buttonHold('enter')">Ent</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton" on-release="actions.buttonUp('delete')" ng-click="actions.buttonClick('delete')" on-hold="actions.buttonHold('delete')">Del</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('tab')" ng-click="actions.buttonClick('tab')" on-hold="actions.buttonHold('tab')">Tab</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="waitermodekeypad per100width" ng-if="keyboard.show && keyboard.mode==2">
+        <div class="row" style="padding-bottom:0px;">
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton" ng-click="actions.mouseLeftClick()">Left Click</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton" ng-click="actions.mouseRightClick()">Right Click</button>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col   buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced"  ng-click="actions.switchToNum()">123</button>
+            </div>
+            <!-- <div class="col  buttonwrapcol">
+                 <button class="button button-block keypadbuttons button-balanced" ng-click="actions.switchToSym()">SYM</button>
+             </div>-->
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" ng-click="actions.hide()">Hide</button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-left-c"  on-release="actions.buttonUp('left')" ng-click="actions.buttonClick('left')" on-hold="actions.buttonHold('left')"></button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-up-c"  on-release="actions.buttonUp('up')" ng-click="actions.buttonClick('up')" on-hold="actions.buttonHold('up')"></button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-down-c"  on-release="actions.buttonUp('down')" ng-click="actions.buttonClick('down')" on-hold="actions.buttonHold('down')"></button>
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced icon ion-arrow-right-c"  on-release="actions.buttonUp('right')" ng-click="actions.buttonClick('right')" on-hold="actions.buttonHold('right')"></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('1')" ng-click="actions.buttonClick('1')" on-hold="actions.buttonHold('1')"><span ng-if="!rootobj.ishiftholded">1</span><span ng-if="rootobj.ishiftholded">!</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('2')" ng-click="actions.buttonClick('2')" on-hold="actions.buttonHold('2')"><span ng-if="!rootobj.ishiftholded">2</span><span ng-if="rootobj.ishiftholded">@</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('3')" ng-click="actions.buttonClick('3')" on-hold="actions.buttonHold('3')"><span ng-if="!rootobj.ishiftholded">3</span><span ng-if="rootobj.ishiftholded">#</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('4')" ng-click="actions.buttonClick('4')" on-hold="actions.buttonHold('4')"><span ng-if="!rootobj.ishiftholded">4</span><span ng-if="rootobj.ishiftholded">$</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('5')" ng-click="actions.buttonClick('5')" on-hold="actions.buttonHold('5')"><span ng-if="!rootobj.ishiftholded">5</span><span ng-if="rootobj.ishiftholded">%</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('6')" ng-click="actions.buttonClick('6')" on-hold="actions.buttonHold('6')"><span ng-if="!rootobj.ishiftholded">6</span><span ng-if="rootobj.ishiftholded">^</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('7')" ng-click="actions.buttonClick('7')" on-hold="actions.buttonHold('7')"><span ng-if="!rootobj.ishiftholded">7</span><span ng-if="rootobj.ishiftholded">&</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('8')" ng-click="actions.buttonClick('8')" on-hold="actions.buttonHold('8')"><span ng-if="!rootobj.ishiftholded">8</span><span ng-if="rootobj.ishiftholded">*</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('9')" ng-click="actions.buttonClick('9')" on-hold="actions.buttonHold('9')"><span ng-if="!rootobj.ishiftholded">9</span><span ng-if="rootobj.ishiftholded">(</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('0')" ng-click="actions.buttonClick('0')" on-hold="actions.buttonHold('0')"><span ng-if="!rootobj.ishiftholded">0</span><span ng-if="rootobj.ishiftholded">)</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('-')" ng-click="actions.buttonClick('-')" on-hold="actions.buttonHold('-')"><span ng-if="!rootobj.ishiftholded">-</span><span ng-if="rootobj.ishiftholded">_</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('=')" ng-click="actions.buttonClick('=')" on-hold="actions.buttonHold('=')"><span ng-if="!rootobj.ishiftholded">=</span><span ng-if="rootobj.ishiftholded">+</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-assertive ion-close-circled" on-release="actions.buttonUp('backspace')" ng-click="actions.buttonClick('backspace')" on-hold="actions.buttonHold('backspace')"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('q')" ng-click="actions.buttonClick('q')" on-hold="actions.buttonHold('q')"><span ng-if="!rootobj.ishiftholded">q</span><span ng-if="rootobj.ishiftholded">Q</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('w')" ng-click="actions.buttonClick('w')" on-hold="actions.buttonHold('w')"><span ng-if="!rootobj.ishiftholded">w</span><span ng-if="rootobj.ishiftholded">W</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('e')" ng-click="actions.buttonClick('e')" on-hold="actions.buttonHold('e')"><span ng-if="!rootobj.ishiftholded">e</span><span ng-if="rootobj.ishiftholded">E</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('r')" ng-click="actions.buttonClick('r')" on-hold="actions.buttonHold('r')"><span ng-if="!rootobj.ishiftholded">r</span><span ng-if="rootobj.ishiftholded">R</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('t')" ng-click="actions.buttonClick('t')" on-hold="actions.buttonHold('t')"><span ng-if="!rootobj.ishiftholded">t</span><span ng-if="rootobj.ishiftholded">T</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('y')" ng-click="actions.buttonClick('y')" on-hold="actions.buttonHold('y')"><span ng-if="!rootobj.ishiftholded">y</span><span ng-if="rootobj.ishiftholded">Y</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('u')" ng-click="actions.buttonClick('u')" on-hold="actions.buttonHold('u')"><span ng-if="!rootobj.ishiftholded">u</span><span ng-if="rootobj.ishiftholded">U</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('i')" ng-click="actions.buttonClick('i')" on-hold="actions.buttonHold('i')"><span ng-if="!rootobj.ishiftholded">i</span><span ng-if="rootobj.ishiftholded">I</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('o')" ng-click="actions.buttonClick('o')" on-hold="actions.buttonHold('o')"><span ng-if="!rootobj.ishiftholded">o</span><span ng-if="rootobj.ishiftholded">O</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('p')" ng-click="actions.buttonClick('p')" on-hold="actions.buttonHold('p')"><span ng-if="!rootobj.ishiftholded">p</span><span ng-if="rootobj.ishiftholded">P</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('[')" ng-click="actions.buttonClick('[')" on-hold="actions.buttonHold('[')"><span ng-if="!rootobj.ishiftholded">[</span><span ng-if="rootobj.ishiftholded">{</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp(']')" ng-click="actions.buttonClick(']')" on-hold="actions.buttonHold(']')"><span ng-if="!rootobj.ishiftholded">]</span><span ng-if="rootobj.ishiftholded">}</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('\\')" ng-click="actions.buttonClick('\\')" on-hold="actions.buttonHold('\\')"><span ng-if="!rootobj.ishiftholded">\</span><span ng-if="rootobj.ishiftholded">|</span></button>
+            </div>
+        </div>
+        <div class="row" >
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('a')" ng-click="actions.buttonClick('a')" on-hold="actions.buttonHold('a')"><span ng-if="!rootobj.ishiftholded">a</span><span ng-if="rootobj.ishiftholded">A</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('s')" ng-click="actions.buttonClick('s')" on-hold="actions.buttonHold('s')"><span ng-if="!rootobj.ishiftholded">s</span><span ng-if="rootobj.ishiftholded">S</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('d')" ng-click="actions.buttonClick('d')" on-hold="actions.buttonHold('d')"><span ng-if="!rootobj.ishiftholded">d</span><span ng-if="rootobj.ishiftholded">D</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('f')" ng-click="actions.buttonClick('f')" on-hold="actions.buttonHold('f')"><span ng-if="!rootobj.ishiftholded">f</span><span ng-if="rootobj.ishiftholded">F</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('g')" ng-click="actions.buttonClick('g')" on-hold="actions.buttonHold('g')"><span ng-if="!rootobj.ishiftholded">g</span><span ng-if="rootobj.ishiftholded">G</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('h')" ng-click="actions.buttonClick('h')" on-hold="actions.buttonHold('h')"><span ng-if="!rootobj.ishiftholded">h</span><span ng-if="rootobj.ishiftholded">H</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('j')" ng-click="actions.buttonClick('j')" on-hold="actions.buttonHold('j')"><span ng-if="!rootobj.ishiftholded">j</span><span ng-if="rootobj.ishiftholded">J</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('k')" ng-click="actions.buttonClick('k')" on-hold="actions.buttonHold('k')"><span ng-if="!rootobj.ishiftholded">k</span><span ng-if="rootobj.ishiftholded">K</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('l')" ng-click="actions.buttonClick('l')" on-hold="actions.buttonHold('l')"><span ng-if="!rootobj.ishiftholded">l</span><span ng-if="rootobj.ishiftholded">L</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp(';')" ng-click="actions.buttonClick(';')" on-hold="actions.buttonHold(';')"><span ng-if="!rootobj.ishiftholded">;</span><span ng-if="rootobj.ishiftholded">:</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('\'')" ng-click="actions.buttonClick('\'')" on-hold="actions.buttonHold('\'')"><span ng-if="!rootobj.ishiftholded">'</span><span ng-if="rootobj.ishiftholded">"</span></button>
+            </div>
+
+        </div>
+        <div class="row" style="padding-left:15%; padding-right:15%;">
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('z')" ng-click="actions.buttonClick('z')" on-hold="actions.buttonHold('z')"><span ng-if="!rootobj.ishiftholded">z</span><span ng-if="rootobj.ishiftholded">Z</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('x')" ng-click="actions.buttonClick('x')" on-hold="actions.buttonHold('x')"><span ng-if="!rootobj.ishiftholded">x</span><span ng-if="rootobj.ishiftholded">X</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('c')" ng-click="actions.buttonClick('c')" on-hold="actions.buttonHold('c')"><span ng-if="!rootobj.ishiftholded">c</span><span ng-if="rootobj.ishiftholded">C</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('v')" ng-click="actions.buttonClick('v')" on-hold="actions.buttonHold('v')"><span ng-if="!rootobj.ishiftholded">v</span><span ng-if="rootobj.ishiftholded">V</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('b')" ng-click="actions.buttonClick('b')" on-hold="actions.buttonHold('b')"><span ng-if="!rootobj.ishiftholded">b</span><span ng-if="rootobj.ishiftholded">B</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('n')" ng-click="actions.buttonClick('n')" on-hold="actions.buttonHold('n')"><span ng-if="!rootobj.ishiftholded">n</span><span ng-if="rootobj.ishiftholded">N</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('m')" ng-click="actions.buttonClick('m')" on-hold="actions.buttonHold('m')"><span ng-if="!rootobj.ishiftholded">m</span><span ng-if="rootobj.ishiftholded">M</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp(',')" ng-click="actions.buttonClick(',')" on-hold="actions.buttonHold(',')"><span ng-if="!rootobj.ishiftholded">,</span><span ng-if="rootobj.ishiftholded"><</span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('.')" ng-click="actions.buttonClick('.')" on-hold="actions.buttonHold('.')"><span ng-if="!rootobj.ishiftholded">.</span><span ng-if="rootobj.ishiftholded">></span></button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" on-release="actions.buttonUp('/')" ng-click="actions.buttonClick('/')" on-hold="actions.buttonHold('/')"><span ng-if="!rootobj.ishiftholded">/</span><span ng-if="rootobj.ishiftholded">?</span></button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom:0px;">
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton"  on-release="actions.buttonUp('ctrl')" ng-click="actions.buttonClick('ctrl')" on-hold="actions.buttonHold('ctrl')">Ctrl</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('shift')" ng-click="actions.buttonClick('shift')" on-hold="actions.buttonHold('shift')">Shift</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('alt')" ng-click="actions.buttonClick('alt')" on-hold="actions.buttonHold('alt')">Alt</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton"  on-release="actions.buttonUp(' ')" ng-click="actions.buttonClick(' ')" on-hold="actions.buttonHold(' ')">___</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('enter')" ng-click="actions.buttonClick('enter')" on-hold="actions.buttonHold('enter')">Ent</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton" on-release="actions.buttonUp('delete')" ng-click="actions.buttonClick('delete')" on-hold="actions.buttonHold('delete')">Del</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('tab')" ng-click="actions.buttonClick('tab')" on-hold="actions.buttonHold('tab')">Tab</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="waitermodekeypad per100width" ng-if="!keyboard.show">
+
+        <div class="row" style="padding-bottom:0px;">
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons bigbutton" ng-click="actions.mouseLeftToggle()" ng-class="{'button-positive':!mouse.lefthold, 'button-assertive':mouse.lefthold}">Left Click</button>
+
+            </div>
+            <div class="col  buttonwrapcol">
+                <button class="button button-block keypadbuttons button-balanced" ng-click="actions.show()">Show</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton" ng-click="actions.mouseRightClick()">Right Click</button>
+            </div>
+
+        </div>
+        <div class="row" style="padding-bottom:0px;">
+
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton"  on-release="actions.buttonUp('ctrl')" ng-click="actions.buttonClick('ctrl')" on-hold="actions.buttonHold('ctrl')">Ctrl</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('shift')" ng-click="actions.buttonClick('shift')" on-hold="actions.buttonHold('shift')">Shift</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('alt')" ng-click="actions.buttonClick('alt')" on-hold="actions.buttonHold('alt')">Alt</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-positive bigbutton"  on-release="actions.buttonUp(' ')" ng-click="actions.buttonClick(' ')" on-hold="actions.buttonHold(' ')">___</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('enter')" ng-click="actions.buttonClick('enter')" on-hold="actions.buttonHold('enter')">Ent</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton" on-release="actions.buttonUp('delete')" ng-click="actions.buttonClick('delete')" on-hold="actions.buttonHold('delete')">Del</button>
+            </div>
+            <div class="col buttonwrapcol">
+                <button class="button button-block keypadbuttons button-royal bigbutton"  on-release="actions.buttonUp('tab')" ng-click="actions.buttonClick('tab')" on-hold="actions.buttonHold('tab')">Tab</button>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ion-content>
+
+    <style>
+
+        .buttonwrapcol{
+            padding-top:1px;
+            padding-bottom:1px;
+            padding-left:2px;
+            padding-right:2px;
+
+        }
+        .keypadbuttons{
+            border-radius:10px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+        }
+        .button.button-block.keypadbuttons{
+            margin:2px;
+
+        }
+        .keypadenterh3{
+            margin-top:12px !important;
+            background-color: #ececec;
+            margin-left:5%;
+            margin-right:5%;
+            text-align:center;
+        }
+        .waitermodekeypadwrapper{
+            position:absolute;
+            bottom:0px;
+            width:100%;
+            text-align: center;
+            background-color: #FFFFFF;
+            z-index:11;
+        }
+        .waitermodekeypad{
+            position:relative;
+            bottom:0px;
+            width:100%;
+            z-index:12;
+            /*max-width: 300px;*/
+            display:inline-block;
+        }
+        .per100width{
+            max-width:100%;
+        }
+        .bigbutton{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .button{
+            min-width: 14px;
+            padding:0 2px;
+            min-height: 40px;
+        }
+    </style>
+
+    
+</ion-content>
+
+<canvas id="canv"  style="background-color: #ececec;width:88%; left:0px; height:300px; position:absolute;top:0px;z-index: 10;"
+
+
+        ng-click="actions.mouseLeftClick($event)"
+        on-drag="actions.mouseDrag($event)"
+        on-release="actions.mouseRelease($event)"
+        on-hold="actions.mouseHold($event)">
+
+    <!--
+                on-double-tap="actions.mouseLeftDoubleClick($event)"    // since fast single click will act as double click in server mostly
+    
+            on-release="actions.mouseLeftRelease($event)"
+            on-hold="actions.mouseLeftHold($event)"-->
+
+
+
+    <!-- ng-mousedown="downEvent($event)"
+        on-touch="downEvent($event)"
+        ng-mousemove="dragEvent($event)"
+        on-drag="dragEvent($event)"
+        ng-mouseup="upEvent($event)"
+        on-release="upEvent($event)"-->
+
+
+</canvas>
+<canvas id="canv1"  style="background-color: #ececec;width:8%; height:300px; right:0px;position:absolute;top:0px;z-index: 10;"
+
+        on-drag-up="actions.scrollUp()"
+        on-drag-down="actions.scrollDown()"
+       >
+
+    <!--
+                on-double-tap="actions.mouseLeftDoubleClick($event)"    // since fast single click will act as double click in server mostly
+
+            on-release="actions.mouseLeftRelease($event)"
+            on-hold="actions.mouseLeftHold($event)"-->
+
+
+
+    <!-- ng-mousedown="downEvent($event)"
+        on-touch="downEvent($event)"
+        ng-mousemove="dragEvent($event)"
+        on-drag="dragEvent($event)"
+        ng-mouseup="upEvent($event)"
+        on-release="upEvent($event)"-->
+
+
+</canvas>
+
+
